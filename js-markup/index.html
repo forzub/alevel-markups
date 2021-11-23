@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-level JS markup</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="wrp1000">
+            <nav><button class="nav_but" id="nav_films">Films</button><button class="nav_but" id="nav_favorites">Favourite</button></nav>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section class="searchbox">
+            <div class="wrp1000">
+                <div class="search_bx">
+                    <input type="text" id="search_field" placeholder="Search show...">
+                    <button class="btn btn_search" id="search_button">Search</button>
+                </div>
+            </div>
+        </section>
+        <section class="filterbox">
+            <div class="wrp1000">
+                <div class="filter_bx">
+                    <div class="filter_genre filter_itm">
+                        <button class="filter_button" id="genre_button">Genre</button>
+                        <ul class="filter_list_ul" id="filter_list_genre"></ul>
+                    </div>
+                    <div class="filter_langs  filter_itm">
+                        <button class="filter_button" id="langs_button">Lang</button>
+                        <ul class="filter_list_ul" id="filter_list_lang"></ul>
+                    </div>
+                    <div class="filter_spase"></div>
+                    <div class="pages_set filter_itm">
+                        <button class="filter_button" id="pages_set">10 per page</button>
+                        <ul class="filter_list_ul" id="pages_set_ul">
+                            <li data="10">10 per page</li>
+                            <li data="20">20 per page</li>
+                            <li data="30">30 per page</li>
+                            <li data="40">40 per page</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="items_listt">
+            <div class="wrp1000">
+                <div class="itms_list_bx"></div>
+            </div>
+        </section>
+        <section class="modal_window_section fadeOut">
+            <div class="wrp1000">
+                <div class="modal_window fadeOut">
+                    <div class="modal_close"></div>
+                    <div class="modal_window_img"></div>
+                    <div class="modal_window_ti_bx">
+                        <div class="modal_window_ti">
+                            <span class="modal_title">Film name: <span id="modal_film_name"></span></span>
+                            <span class="modal_title">film genre: <span id="modal_film_ganre"></span></span>
+                            <span class="modal_title">film lang: <span id="modal_film_lang"></span></span>
+                            <span class="modal_title">Film Description: </span>
+                            <div id="modal_film_description"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="items_nav">
+            <div class="wrp1000">
+                <div class="itms_nav_bx">
+                    <button class="nav_button" id="nav_prev_button">Prev</button>
+                    <div class="nav_bar" id="nav_bar">
+                        <div class="nav_info"><span id="nav_page">0</span> from <span id="nav_pages">10</span></div>
+                        <ul id="nav_pagenator" class="hide">
+
+                        </ul>
+                    </div>
+                    <button class="nav_button" id="nav_next_button">Next</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="wrp1000">
+        </div>
+    </footer>   
+</div>    
+<script src="index.js"></script>
+</body>
+</html>
